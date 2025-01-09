@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+    <title>القران الكريم</title>
+</head>
+<body>
+             <!--SALAH SECTION-->
+             <section class="salah-container">
+                <div class="info">
+                    <select name="" id="cities">
+                       <option value="">اختر مدينة</option>
+                    </select>
+                    <div class="date">20/12/2025</div>
+
+                    </div>
+                    
+                </div>
+                <div class="salah">
+                    <div class="fajr box-style">
+                        <img src="images/fajr.png"  class="salah-icon" alt="">
+                        <div>الفجر</div>
+                        <div id="fajr">00:00</div>
+                    </div>
+                    <div class="dhuhr box-style">
+                        <img src="images/dhuhr.png"  class="salah-icon" alt="">
+                        <div>الظهر</div>
+                        <div id="dhuhr">00:00</div>
+                    </div>
+                    <div class="asr box-style">
+                        <img src="images/asr.png"  class="salah-icon" alt="">
+                        <div>العصر</div>
+                        <div id="asr">00:00</div>
+                    </div>
+                    <div class="maghrib box-style">
+                        <img src="images/maghrib.png"  class="salah-icon" alt="">
+                        <div>المغرب</div>
+                        <div id="maghrib">00:00</div>
+                    </div>
+                    <div class="isha box-style">
+                        <img src="images/isha.png"  class="salah-icon" alt="">
+                        <div>العشاء</div>
+                        <div id="isha">00:00</div>
+                    </div>
+                </div>
+        
+            </section>
+    <main>
+        <div class="icons">
+            <button class="icon-btn"><img src="images/quran (3).png" alt="" class="icon"></button>
+            <button class="icon-btn"><img src="images/podium.png" alt="" class="icon"></button>
+        </div>
+        <section class="salam">
+            <div class="salam-container">
+                <h3>السلام عليكم ورحمة الله تعالى وبركاته </h3>
+                <h3>الصلاة والسلام على خير المرسلين</h3>
+                <p><span><img src="images/star (1).png" alt="" class="icon"></span>
+                    مرحبا بكم في تطبيقكم الخاص بالقرآن الكريم والتفسير.
+                    <span><img src="images/star (1).png" alt="" class="icon"></span></p>
+
+                <ul>
+                    <li> 
+                        <span><img src="images/quran (3).png" alt="" class="icon"></span>  للاستماع إلى "القرآن الكريم "   
+                    </li>
+                    <li> 
+                        <span><img src="images/podium.png" alt="" class="icon"></span>  للاستماع إلى "المختصر من تفسير الطبري"  
+                    </li>
+                </ul>
+                <div style="font-size: 14px;" >
+                    <p style="text-align: center; font-size: 15px;  color: #555; margin-top: 20px;">
+                        <b>ملاحظة:</b> <br> <hr> يتم استخدام توقيت الصلاة في هذه الصفحة بناءً على واجهة برمجة التطبيقات 
+                        <a href="https://habous-prayer-times-api.onrender.com/" target="_blank" style="color: #007BFF; text-decoration: none;">https://habous-prayer-times-api.onrender.com/</a>، 
+                        وهو ليس توقيتًا رسميًا. يُنصح باستخدامه كمرجع تقريبي فقط والتحقق من المصادر الرسمية لتأكيد أوقات الصلاة.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    <!--QURAN SECTION-->
+    <section class="content" id="quran">
+        <h2>القرآن الكريم</h2>
+
+        <div class="select-container">
+            <select name="" id="reciters">
+                <option value="">اختر قارئ</option>
+            </select>
+            <select name="" id="moshaf">
+                <option value="">اختر رواية</option>
+            </select>
+            <select name="" id="surah">
+                <option value="">اختر سورة</option>
+            </select>
+            <audio controls autoplay muted id="audio-player">
+                <source src="" type="audio/ogg">
+                <source src="" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+        </div>
+
+
+    </section>
+
+
+
+        <!--Tafssir SECTION-->
+        <section class="content" >
+            <h2> الخلاصة من تفسير الطبري </h2>
+
+                    <div class="select-container">
+                        <select name="" id="surah-name">
+                            <option value="">اختر سورة</option>
+                        </select>
+                        <select name="" id="tafssir">
+                            <option value="">اختر جزء</option>
+                        </select>
+                    <audio controls autoplay muted id="audio-player-tafssir">
+                        <source src="" type="audio/ogg">
+                        <source src="" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                    </div>
+
+                        
+                </div>
+        </section>
+    </main>
+<!--
+
+
+    <footer>
+        <span class="logo">تطبيق القرآن الكريم والتفسير</span>
+        <p>&copy; 2025 جميع الحقوق محفوظة</p>
+        <div class="sources">
+            <p>مصدر القرآن: API https://mp3quran.net/api/v3/</p>
+            <p>مصدر أوقات الصلاة: API https://habous-prayer-times-api.onrender.com/api/v1/available-cities</p>
+        </div>
+    </footer>      
+-->
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
