@@ -5,8 +5,17 @@ const urlsToCache = [
   "manifest.json",
   "style.css",
   "main.js",
-  "icon192.png",
-  "icon512.ico",
+  "quran.png",
+  "quran192.png",
+  "images/asr.png",
+  "images/dhuhr.png",
+  "images/fajr.png",
+  "images/isha.png",
+  "images/maghrib.png",
+  "images/podium.png",
+  "images/quran (3).png",
+  "images/star (1).png",
+  "images/pexels-simon-lovi-886614858-20082339.jpg",
 ];
 
 // Install service worker and cache resources
