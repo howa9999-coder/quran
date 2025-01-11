@@ -191,7 +191,9 @@ h2{
     background-color: white;
     margin: 5px;
 }
-
+.icon-btn .shadow{
+    box-shadow: 0 0 5px white;
+}
 .content{
     display: none;
     height: 60vh;
