@@ -182,17 +182,17 @@ h2{
 .icon{
     width: 40px;
     height: 40px;
+    border-radius: 50px;
+    background-color: white;
 }
 .icon-btn{
     border: none;
     cursor: pointer;
-    border-radius: 50px;
     padding: 2px;
-    background-color: white;
     margin: 5px;
 }
 .icon-btn .shadow{
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px black;
 }
 .content{
     display: none;
@@ -211,7 +211,7 @@ h2{
 
 
  .shadow{
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px black;
 }
  .none{
     display: none;
